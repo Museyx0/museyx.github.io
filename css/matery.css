@@ -564,7 +564,7 @@ header .go-back i {
     display: block;
     left: 0;
     top: 0;
-    content: "";
+    /* content: ""; 取消了遮罩（注释掉） */
 }
 
 .bg-cover .container {
