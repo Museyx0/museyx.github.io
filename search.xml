@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git提交约定</title>
+      <link href="/museyx.github.io/2021/10316014.html"/>
+      <url>/museyx.github.io/2021/10316014.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="git提交项目-约定"><a href="#git提交项目-约定" class="headerlink" title="git提交项目-约定"></a>git提交项目-约定</h1><h4 id="git下载项目到本地"><a href="#git下载项目到本地" class="headerlink" title="git下载项目到本地"></a>git下载项目到本地</h4><pre><code>git clone http链接地址或SSH地址</code></pre><h3 id="安装包依赖"><a href="#安装包依赖" class="headerlink" title="安装包依赖"></a>安装包依赖</h3><pre><code>npm install</code></pre><p>若权限不够 mac电脑提升权限</p><pre><code>sudo npm install接下来需要你输入密码</code></pre><h3 id="项目拉取"><a href="#项目拉取" class="headerlink" title="项目拉取"></a>项目拉取</h3><p>如果项目有最新的，就</p><pre><code>git pull ssh地址仓库名，如 git pull origin dev</code></pre><p>git项目上如果有多个分支，假设你需要切到已经存在的dev分支</p><pre><code>git checkout dev</code></pre><hr><h3 id="项目提交代码"><a href="#项目提交代码" class="headerlink" title="项目提交代码"></a>项目提交代码</h3><pre><code>git add .git commit -m "fix:apk检测记录修复"//必须先拉最新的代码，防止产生冲突git pull//提交自己的最新代码git push  //此项可不用自己操作，仓库设为私有，需要管理员先进行合并</code></pre><p>git pull命令，在更新远端代码的同时如果与本地代码产生冲突了，那么冲突的文件中就出现了需要手动合并的部分<br>针对上面的代码，建议使用 git pull –rebase</p><pre><code>git add .git commit -m "fix:apk检测记录修复"//git pull --rebase; 当有这些冲突存在时，//git 帮我们自动创建了一个新的分支，并且git告诉你接下来要在这个分支上处理这个冲突git pull --rebase// 当你解决完冲突后git add .git rebase --continue//提交自己的最新代码git push </code></pre><p>git pull –rebase 用在合并代码的时候其作用就是在一个随机创建的分支上处理冲突，避免了直接污染原来的分区</p><p>merge操作会生成一个新的节点，之前的提交分开显示。<br>而rebase操作不会生成新的节点，是将两个分区融合成一个线性的提交。 </p><p><a href="https://www.jianshu.com/p/dc367c8dca8e">关于为什么使用rebase</a>  </p><h3 id="合并分支-dev-realse分支合并，realse是测试"><a href="#合并分支-dev-realse分支合并，realse是测试" class="headerlink" title="合并分支(dev realse分支合并，realse是测试)"></a>合并分支(dev realse分支合并，realse是测试)</h3><pre><code>git checkout releasegit pullgit merge devgit push</code></pre><pre><code>git checkout releasegit add .git commit -m "chore：请求合并dev分支到测试环境"git pull --rebasegit merge dev</code></pre><p>为了commit message的信息规范，我们采用约定式提交<br><img src="https://img-blog.csdnimg.cn/20200205110445471.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZlcnJ5c291bA==,size_16,color_FFFFFF,t_70"></p><p>下面是git约定提交的两个文章：<br><a href="https://www.cnblogs.com/wubaiqing/p/10307605.html">Git Commit 标准化</a><br><a href="https://www.jianshu.com/p/eb44ae2e5016">(转)Git约定式提交</a><br>还有git新建分支与分支切换：<br><a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B60">分支的新建与合并</a>   </p><hr><p>了解一下rebase怎么用：</p><pre><code>主分支 merge 功能分支功能分支 rebase 主分支这样能保持提交的整洁</code></pre><p>用git pull –rebase 来拉取origin dev,不然会将本地的dev合并进去</p><pre><code>新建功能分支，不要在dev上开发然后发现dev分支有更新了，就pull一下，再用功能分支 rebase dev</code></pre><hr><p>阮一峰的git原理<br><a href="http://www.ruanyifeng.com/blog/2018/10/git-internals.html">http://www.ruanyifeng.com/blog/2018/10/git-internals.html</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/museyx.github.io/2021/103016107.html"/>
       <url>/museyx.github.io/2021/103016107.html</url>

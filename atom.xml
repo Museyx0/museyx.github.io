@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Museyx的个人博客</title>
+  <title>Museyx</title>
   
   <subtitle>思静</subtitle>
   <link href="https://museyx0.github.io/museyx.github.io/atom.xml" rel="self"/>
   
   <link href="https://museyx0.github.io/museyx.github.io/"/>
-  <updated>2021-10-29T18:06:57.682Z</updated>
+  <updated>2021-10-31T05:35:38.186Z</updated>
   <id>https://museyx0.github.io/museyx.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git提交约定</title>
+    <link href="https://museyx0.github.io/museyx.github.io/2021/10316014.html"/>
+    <id>https://museyx0.github.io/museyx.github.io/2021/10316014.html</id>
+    <published>2021-10-31T05:33:30.000Z</published>
+    <updated>2021-10-31T05:35:38.186Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;git提交项目-约定&quot;&gt;&lt;a href=&quot;#git提交项目-约定&quot; class=&quot;headerlink&quot; title=&quot;git提交项目-约定&quot;&gt;&lt;/a&gt;git提交项目-约定&lt;/h1&gt;&lt;h4 id=&quot;git下载项目到本地&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="git" scheme="https://museyx0.github.io/museyx.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
